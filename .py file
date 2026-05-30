@@ -1,0 +1,38 @@
+eggs = [210, 195, 220, 205, 215, 225, 230]
+broken = [5, 3, 4, 2, 6, 5, 4]
+feed_bags = [8, 7, 8, 7, 9, 8, 8]
+
+#Total eggs collected
+total_eggs = sum(eggs)
+
+#Total broken eggs
+total_broken = sum(broken)
+
+#Remaining good eggs
+remaining_eggs = total_eggs - total_broken
+
+#Average eggs collected per day
+average_eggs = total_eggs / len(eggs)
+
+#Highest eggs collected
+highest_eggs = max(eggs)
+
+#Lowest eggs collected
+lowest_eggs = min(eggs)
+
+#Total feed bags used
+total_feed = sum(feed_bags)
+
+#Final farm report
+print("POULTRY FARM WEEKLY REPORT")
+print("---------------------------")
+print("Total eggs collected:", total_eggs)
+print("Total broken eggs:", total_broken)
+print("Remaining good eggs:", remaining_eggs)
+print("Average eggs per day:", average_eggs)
+print("Highest eggs collected:", highest_eggs)
+print("Lowest eggs collected:", lowest_eggs)
+print("Total feed bags used:", total_feed)
+
+if remaining_eggs > 1400:
+    print("Excellent production this week!")
